@@ -33,7 +33,7 @@ Four quick steps to get you started:
 
 Once you have completed the **Getting Started** steps:
 
-* **copy and paste the code from this example**[hsv_colour.py](https://raw.githubusercontent.com/tobybreckon/invisible/refs/heads/main/src/hsv_colour.py) into your Visual Studio Code window
+* **copy and paste the code from this example**  [hsv_colour.py](https://raw.githubusercontent.com/tobybreckon/invisible/refs/heads/main/src/hsv_colour.py) into your Visual Studio Code window
 
 * **save this file as ```main.py```** by selecting menu item: **File > Save As...** (then entering filename as ```main.py```)
  
@@ -120,7 +120,7 @@ To improve our cloaking approach, we use a couple **common computer science conc
 
     - **Solution** = using  **feathered blending** we slightly blur the edges between the _mask_ region and the corresponding edges of the _background_ image. These blured edges, are known as  _feathered_ edges and allow us to combine the two image regions via a computer graphics technique known as _alpha_-blending or _compositing_.
 
-To try out these improvements, try the following code example as before - [invisibility_cloak_improved.py](https://raw.githubusercontent.com/tobybreckon/chroma-keying/refs/heads/main/src/invisibility_cloak_improved.py). 
+To try out these improvements, try the following code example as before - [invisibility_cloak_improved.py](https://raw.githubusercontent.com/tobybreckon/invisible/refs/heads/main/src/invisibility_cloak_improved.py). 
 
 
 Here we use **efficient arithmetic operations** on a modern CPU to obtain improved real-time cloaking.
@@ -133,7 +133,7 @@ Finally, we **turn about the idea behind the invisibility cloak to provide ourse
 
 To try this out:
 
-- **copy and paste the code from this example** [chroma_keying_background.py](https://raw.githubusercontent.com/tobybreckon/chroma-keying/refs/heads/main/src/chroma_keying.py) into your Visual Studio Code window (replacing all earlier code) again save (File > Save)
+- **copy and paste the code from this example** [chroma_keying_background.py](https://raw.githubusercontent.com/tobybreckon/invisible/refs/heads/main/src/chroma_keying.py) into your Visual Studio Code window (replacing all earlier code) again save (File > Save)
 
 - **download a suitable background image** from somewhere (e.g. free images from [unsplash](https://unsplash.com/backgrounds/desktop/computer) or perhaps of [Durham Cathedral](https://www.thisisdurham.com/dbimgs/durham-cathedral-background.jpg)) and **save it as ``background.jpg``* (wherever your _main.py_ is located)
 

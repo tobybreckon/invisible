@@ -1,6 +1,6 @@
 #####################################################################
 
-# Task 2 : identify an image region by hue via point and click
+# Task 3 : identify an image region by hue via point and click
 
 #####################################################################
 

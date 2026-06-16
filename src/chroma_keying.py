@@ -1,6 +1,6 @@
 #####################################################################
 
-# Task 4 : run a live chroma keying demo using a background image saved
+# Task 6 : run a live chroma keying demo using a background image saved
 #          as background.jpg
 
 #####################################################################

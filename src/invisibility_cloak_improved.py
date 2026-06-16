@@ -1,6 +1,6 @@
 #####################################################################
 
-# Task 3 : run an improved live invisibility cloak demo using:
+# Task 5 : run an improved live invisibility cloak demo using:
 #          (a) a convex hull operation around the foreground
 #          (b) feathered blenidng for compositing
 
