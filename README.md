@@ -106,7 +106,7 @@ Next, we use our earlier approach to **isolate the image region with a green Hue
 
 We use **computational bit-wise logical operations** such as NOT, AND and OR to perform this very efficiently in real-time.
 
-###  5. Improving our Invisibility Cloak ....
+##  5. Improving our Invisibility Cloak ....
 
 To improve our cloaking approach, we use a couple **common computer science concepts** from _computational geometry_ and _computer graphics_:
 
@@ -125,7 +125,7 @@ To try out these improvements, try the following code example as before - [invis
 
 Here we use **efficient arithmetic operations** on a modern CPU to obtain improved real-time cloaking.
 
-## 5. Chroma Keying for Real by Faking it ...
+## 6. Chroma Keying for Real by Faking it ...
 
 ![cloaking 1](img/chroma-key-example-01.png)
 
