@@ -45,5 +45,14 @@ To use each of the following with the above, first copy to ``/tmp``, ``chmod 777
 
 ```
 # set up to set default startup directory (e.g. to a cloned github repo)
-./vscode-python-extensions-install.sh
+./vscode-set-start-directory.sh
+```
+
+Other useful commands as an _aide memoir_: 
+
+```
+./run-as-users.sh accounts.txt git clone https://github.com/tobybreckon/invisible.git
+
+./run-as-users.sh accounts.txt /tmp/vscode-set-start-directory.sh \~/invisible
+
 ```
