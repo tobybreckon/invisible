@@ -133,57 +133,6 @@ for dir in "${CONFIG_DIRS[@]}"; do
   merge_settings "$dir"
 done
 
-# Create a launcher that also disables common GitHub/Copilot extensions at runtime.
-# This helps even if the extensions are installed globally or bundled.
-mkdir -p "$HOME/.local/bin"
-
-cat > "$HOME/.local/bin/code-empty-quiet" <<'EOF'
-#!/usr/bin/env bash
-
-# Pick the first VS Code-like command available.
-if command -v code >/dev/null 2>&1; then
-  CODE_BIN="code"
-elif command -v codium >/dev/null 2>&1; then
-  CODE_BIN="codium"
-elif command -v code-insiders >/dev/null 2>&1; then
-  CODE_BIN="code-insiders"
-else
-  echo "Could not find code, codium, or code-insiders in PATH." >&2
-  exit 1
-fi
-
-exec "$CODE_BIN" \
-  --new-window \
-  --disable-extension GitHub.copilot \
-  --disable-extension GitHub.copilot-chat \
-  --disable-extension GitHub.vscode-pull-request-github \
-  --disable-extension GitHub.remotehub \
-  --disable-extension GitHub.remotehub-insiders \
-  "$@"
-EOF
-
-chmod +x "$HOME/.local/bin/code-empty-quiet"
-
-# GUI desktop launcher.
-mkdir -p "$HOME/.local/share/applications"
-
-cat > "$HOME/.local/share/applications/code-empty-quiet.desktop" <<EOF
-[Desktop Entry]
-Name=Visual Studio Code - Empty Quiet
-Comment=Open VS Code with empty window, no AI/GitHub startup surfaces
-Exec=$HOME/.local/bin/code-empty-quiet
-Icon=visual-studio-code
-Type=Application
-Categories=Development;IDE;
-StartupNotify=true
-EOF
-
-chmod +x "$HOME/.local/share/applications/code-empty-quiet.desktop"
-
-if command -v update-desktop-database >/dev/null 2>&1; then
-  update-desktop-database "$HOME/.local/share/applications" >/dev/null 2>&1 || true
-fi
-
 # Optional: uninstall user-installed Copilot/GitHub PR extensions if present.
 # This only affects extensions installed in the user's extension directory.
 for bin in code codium code-insiders; do
@@ -198,11 +147,3 @@ done
 echo
 echo "Done."
 echo
-echo "Start VS Code with:"
-echo "  code-empty-quiet"
-echo
-echo "Or use the desktop launcher:"
-echo "  Visual Studio Code - Empty Quiet"
-echo
-echo "Note: if ~/.local/bin is not in PATH, add this to your shell profile:"
-echo "  export PATH=\"\$HOME/.local/bin:\$PATH\""
