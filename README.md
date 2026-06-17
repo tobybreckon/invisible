@@ -41,6 +41,8 @@ Once you have completed the **Getting Started** steps:
 
 * **save this file as ```main.py```** by selecting menu item: **File > Save As...** (then entering filename as ```main.py```)
  
+![VS code save as python](img/vs-code-python-save-as.png)
+
 * click _"Run > Run Without Debugging"_ (select _"Python Debugger"_ if prompted)
 
 ![VS code run python code](img/vs-code-python-run.png)
@@ -119,7 +121,7 @@ To improve our cloaking approach, we use a couple **common computer science conc
     
     - **Solution** = a **convex hull** operation allows us to extract the exterior contour around all of the _mask_ region pixels, and then use the full interior of this contour as an improved _mask_.
 
-- **feathered blending**: 
+- **Feathered Blending**: 
     - **Problem:** we see strange edge artifacts at the joint between our cloak region and the live image.
 
     - **Solution** = using  **feathered blending** we slightly blur the edges between the _mask_ region and the corresponding edges of the _background_ image. These blured edges, are known as  _feathered_ edges and allow us to combine the two image regions via a computer graphics technique known as _alpha_-blending or _compositing_.
