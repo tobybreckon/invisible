@@ -26,7 +26,11 @@ while (keep_processing):
 
     # read an image from the camera
 
-    _, image = camera.read()
+    ret, image = camera.read()
+    if (ret == 0):
+        keep_processing = False
+        print('ERROR: no image from camera.')
+        continue
 
     # construct RGB channel view (N.B. OpenCV is BGR, not RGB channel ordering)
 
