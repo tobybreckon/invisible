@@ -15,7 +15,7 @@ Four quick steps to get you started:
 
 3. Start **Visual Studio Code** (**Top  Right Menu**: Applications > Programming > Visual Studio Code)
 
-[ 4. Click **"skip" to anything about logging into GitHub** ]
+4. _Click **"skip" to anything about logging into GitHub**_
 
 5. Within **Visual Studio Code** select menu item: **File  > New Text File**
 
