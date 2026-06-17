@@ -13,15 +13,19 @@ Four quick steps to get you started:
   
    (**taped to desk** in fron of you)
 
-3. Start **Visual Studio Code** (Menu: Applications > Programming > Visual Studio Code)
+3. Start **Visual Studio Code** (**Top  Right Menu**: Applications > Programming > Visual Studio Code)
 
-![VS code python setup](img/vs-code-python-setup.png)
-
-4. Click **"skip" to anything about logging into GitHub**
+[ 4. Click **"skip" to anything about logging into GitHub** ]
 
 5. Within **Visual Studio Code** select menu item: **File  > New Text File**
+
+    ![VS code install python](img/vs-code-new-file.png)
+
     * Click the blue _"Select a language"_ and start to type _python_, then select/click the _Python_ option that appears (as shown above)
         - If _"Python"_ is not offered as a choice, press **Ctrl+Shift+X** and then search for _"Python"_ and press install
+
+    ![VS code python setup](img/vs-code-python-setup.png)
+
     * It may then say _"Do you want to install the recommended extensions for Python?"_ (_from Marketplace_ or similar)
     * Select the first option from the list on the left. Click blue _"Install"_ text and wait ~1 minute whilst everything is set up for you
 
@@ -37,7 +41,7 @@ Once you have completed the **Getting Started** steps:
 
 * **save this file as ```main.py```** by selecting menu item: **File > Save As...** (then entering filename as ```main.py```)
  
-* click _"Run > Run Without Debugging"_
+* click _"Run > Run Without Debugging"_ (select _"Python Debugger"_ if prompted)
 
 ![VS code run python code](img/vs-code-python-run.png)
 
