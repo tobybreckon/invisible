@@ -31,7 +31,10 @@ Usage: ./run-as-users.sh <accounts_file> <command>
 Example: ./run-as-users.sh accounts.txt 'whoami && id'
 ```
 
-To use each of the following with the above, first copy to ``/tmp``, ``chmod 777 <filename>`` and then run as  ``/run-as-users.sh <accounts_file> /tmp/scriptname.sh``
+To use each of the following with the above, first copy it to ``/tmp``,  then``chmod 777 /tmp/<script filename>`` and then run as:  
+```
+./run-as-users.sh <accounts_file> /tmp/scriptname.sh
+```
 
 ```
 # set up to remove all confusing start up nag messages on VS Code
