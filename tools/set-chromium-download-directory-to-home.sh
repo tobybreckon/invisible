@@ -27,10 +27,13 @@ PREFS_FILE="$CONFIG_DIR/Default/Preferences"
 DOWNLOAD_DIR="$HOME"
 
 # Make sure Chromium is not running (it overwrites Preferences on exit)
-if pgrep "chromium" > /dev/null; then
-    echo "Error: Chromium is running. Please close it before running this script."
-    exit 1
-fi
+
+# edit out as this is host specific, not the user specific
+
+# if pgrep "chromium" > /dev/null; then
+#    echo "Error: Chromium is running. Please close it before running this script."
+#    exit 1
+# fi
 
 # Ensure the Default profile directory exists
 mkdir -p "$CONFIG_DIR/Default"
