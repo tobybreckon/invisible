@@ -32,16 +32,19 @@ while (keep_processing):
         print('ERROR: no image from camera.')
         continue
 
-    # construct RGB channel view (N.B. OpenCV is BGR, not RGB channel ordering)
+    # construct RGB channel views (N.B. OpenCV is BGR, not RGB channel ordering)
+    # channel 0 = blue, channel 1 = green, channel 2 = red
 
-    red = np.zeros(image.shape, dtype=np.uint8)
-    red[:, :, 2] = image[:, :, 2]
+    blue = np.zeros(image.shape, dtype=np.uint8)
+    blue[:, :, 0] = image[:, :, 0]
 
     green = np.zeros(image.shape, dtype=np.uint8)
     green[:, :, 1] = image[:, :, 1]
 
-    blue = np.zeros(image.shape, dtype=np.uint8)
-    blue[:, :, 0] = image[:, :, 0]
+    red = np.zeros(image.shape, dtype=np.uint8)
+    red[:, :, 2] = image[:, :, 2]
+
+    # reconsruct as single side-by-side [red | green | blue] image for display
 
     channels = np.hstack((np.hstack((red, green)), blue))
 
