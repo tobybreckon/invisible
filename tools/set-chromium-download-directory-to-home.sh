@@ -27,7 +27,7 @@ PREFS_FILE="$CONFIG_DIR/Default/Preferences"
 DOWNLOAD_DIR="$HOME"
 
 # Make sure Chromium is not running (it overwrites Preferences on exit)
-if pgrep -x "chromium" > /dev/null; then
+if pgrep "chromium" > /dev/null; then
     echo "Error: Chromium is running. Please close it before running this script."
     exit 1
 fi
