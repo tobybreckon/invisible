@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+###############################################################################
 # setup-vscode-quiet.sh
 #
 # Configure VS Code / VSCodium-like installs on Linux to:
@@ -11,6 +12,8 @@ set -euo pipefail
 # - Create a launcher that starts VS Code with AI/GitHub extensions disabled
 #
 # Recommended: close VS Code before running.
+###############################################################################
+
 
 CONFIG_DIRS=(
   "$HOME/.config/Code/User"
@@ -133,8 +136,13 @@ for dir in "${CONFIG_DIRS[@]}"; do
   merge_settings "$dir"
 done
 
+###############################################################################
+
 # Optional: uninstall user-installed Copilot/GitHub PR extensions if present.
 # This only affects extensions installed in the user's extension directory.
+
+###############################################################################
+
 for bin in code codium code-insiders; do
   if command -v "$bin" >/dev/null 2>&1; then
     "$bin" --uninstall-extension GitHub.copilot >/dev/null 2>&1 || true
@@ -147,3 +155,5 @@ done
 echo
 echo "Done."
 echo
+
+###############################################################################

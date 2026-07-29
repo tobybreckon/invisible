@@ -1,6 +1,9 @@
 #!/bin/bash
+###############################################################################
 
 # Script to set Chromium download directory to user's home directory
+
+###############################################################################
 
 # Determine the correct Chromium config path
 # Chromium uses one of these depending on distro/install method
@@ -26,6 +29,8 @@ fi
 PREFS_FILE="$CONFIG_DIR/Default/Preferences"
 DOWNLOAD_DIR="$HOME"
 
+###############################################################################
+
 # Make sure Chromium is not running (it overwrites Preferences on exit)
 
 # edit out as this is host specific, not the user specific
@@ -34,6 +39,8 @@ DOWNLOAD_DIR="$HOME"
 #    echo "Error: Chromium is running. Please close it before running this script."
 #    exit 1
 # fi
+
+###############################################################################
 
 # Ensure the Default profile directory exists
 mkdir -p "$CONFIG_DIR/Default"
@@ -80,4 +87,6 @@ else
     exit 1
 fi
 
-echo "Done. Restart Chromium for changes to take effect."
+echo "Done. Restart Chromium (if running) for changes to take effect."
+
+###############################################################################

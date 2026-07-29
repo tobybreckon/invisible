@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+###############################################################################
+
+# auto pre-install VS Code python extensions for current user
+
+###############################################################################
 
 set -e
 
@@ -16,6 +21,8 @@ fi
 
 echo "Using VS Code command: $VSCODE_CMD"
 
+###############################################################################
+
 # Python-related extensions
 EXTENSIONS=(
     "ms-python.python"
@@ -31,3 +38,5 @@ for extension in "${EXTENSIONS[@]}"; do
 done
 
 echo "Done. Python extensions installed successfully."
+
+###############################################################################

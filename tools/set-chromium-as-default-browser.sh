@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
-#
+
+###############################################################################
+
 # First set chromium as the default external browser in MATE
 
 xdg-settings set default-web-browser chromium.desktop
 
 echo "MATE: default-web-browser: chromium.desktop"
 echo
+
+###############################################################################
 
 # Second, set chromium as the default external browser in VS Code
 # by updating "workbench.externalBrowser" in settings.json.
@@ -79,3 +83,5 @@ mv "$TMP" "$SETTINGS"
 echo "Done. 'workbench.externalBrowser' set to: $BROWSER"
 echo "Restart VS Code (or reload the window) for the change to take effect."
 echo
+
+###############################################################################
