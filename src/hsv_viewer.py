@@ -34,10 +34,10 @@ while (keep_processing):
     image_hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
     hue = np.zeros(image_hsv.shape, dtype=np.uint8)
-    hue[:, :, 0] = np.uint8(image_hsv[:, :, 0] * (1.4))
+    hue[:, :, 0] = np.uint8(image_hsv[:, :, 0])
     hue[:, :, 1] = np.ones(image_hsv[:, :, 1].shape) * 255
     hue[:, :, 2] = np.ones(image_hsv[:, :, 2].shape) * 255
-    colour_mapped_hue = cv2.cvtColor(hue, cv2.COLOR_HSV2BGR)  # RGB better
+    colour_mapped_hue = cv2.cvtColor(hue, cv2.COLOR_HSV2BGR)
 
     saturation = cv2.cvtColor(image_hsv[:, :, 1], cv2.COLOR_GRAY2BGR)
     value = cv2.cvtColor(image_hsv[:, :, 2], cv2.COLOR_GRAY2BGR)
