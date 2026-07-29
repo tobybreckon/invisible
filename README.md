@@ -1,6 +1,6 @@
 # Invisiblity Cloaking - Simple Steps in How This Works
 
-[Chroma Keying via Colour Selection and Filtering in Real-time Video](https://github.com/tobybreckon/chroma-keying/)
+A simplified verson of [Chroma Keying via Colour Selection and Filtering in Real-time Video](https://github.com/tobybreckon/chroma-keying/) for visitors to [Durham Unievrsity - Department of Computer Science](https://www.durham.ac.uk/departments/academic/computer-science/). 
 
 
 ## 1. Getting Started
@@ -156,6 +156,6 @@ You should now see **your own chroma keyed backdrop where the (green) chroma key
 
 ---
 
-**Instructor / Developer Notes + Acknowledgements:** see all at [Chroma Keying via Colour Selection and Filtering in Real-time Video](https://github.com/tobybreckon/chroma-keying/).
+**Instructor / Developer Notes + Acknowledgements:** see all at [Chroma Keying via Colour Selection and Filtering in Real-time Video](https://github.com/tobybreckon/chroma-keying/). This excercise assumes [these setup steps have been completed on user accounts](tools/README.md).
 
 ---
