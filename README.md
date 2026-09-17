@@ -1,6 +1,6 @@
 # Invisiblity Cloaking - Simple Steps in How This Works
 
-A simplified verson of [Chroma Keying via Colour Selection and Filtering in Real-time Video](https://github.com/tobybreckon/chroma-keying/) for visitors to [Durham Unievrsity - Department of Computer Science](https://www.durham.ac.uk/departments/academic/computer-science/). 
+A simplified verson of [Chroma Keying via Colour Selection and Filtering in Real-time Video](https://github.com/tobybreckon/chroma-keying/) for visitors to [Durham University - Department of Computer Science](https://www.durham.ac.uk/departments/academic/computer-science/). 
 
 
 ## 1. Getting Started
